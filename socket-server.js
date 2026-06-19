@@ -51,6 +51,13 @@ app.post("/update-position", (req, res) => {
     res.json({ success: true })
 })
 
+app.get("/", (req, res) => {
+    res.json({
+        status: true,
+        message: "Socket.IO Server Running"
+    });
+});
+
 
 
 server.listen(3001, () => {
